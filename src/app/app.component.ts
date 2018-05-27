@@ -9,7 +9,7 @@ import * as env from 'env-var';
 })
 export class AppComponent implements OnInit {
   title = 'Heroku-Deployment-App Last update today :)';
-  username = env.get('USERNAME');
+  username = env.get('USERNAME').required().asString();
   
   ngOnInit() {
     console.log(this.username);
