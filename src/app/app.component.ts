@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Heroku-Deployment-App in Staging now :)';
+  title = 'Heroku-Deployment-App Last update today :)';
 }
