@@ -9,6 +9,7 @@ import * as env from 'env-var';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Heroku-Deployment-App Last update today :)';
+  date:Date = new Date();
+  title:String = 'Heroku-Deployment-App Last update ' + this.date;
   
 }
