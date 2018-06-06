@@ -1,3 +1,4 @@
+import { async } from '@angular/core/testing';
 import { environment } from './../environments/environment';
 import { Component, OnInit } from '@angular/core';
 import * as env from 'env-var';
@@ -7,13 +8,7 @@ import * as env from 'env-var';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'Heroku-Deployment-App Last update today :)';
-  username = env.get('USERNAME').required().asString();
-  
-  ngOnInit() {
-    console.log(this.username);
-  }
-
   
 }
