@@ -10,6 +10,6 @@ import * as env from 'env-var';
 })
 export class AppComponent {
   date:Date = new Date();
-  title:String = 'Heroku-Deployment-App Last update ' + this.date;
+  title:String = 'Heroku-Deployment-App Last update: ' + this.date;
   
 }
