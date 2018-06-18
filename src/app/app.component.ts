@@ -9,5 +9,7 @@ import * as env from 'env-var';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  date = new Date().getDate();    
+  dd = new Date().getDay();
+  mm = new Date().getMonth();
+  yy = new Date().getDate();    
 }
